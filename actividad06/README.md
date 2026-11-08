@@ -2,7 +2,7 @@
 
 ## Convierte un if/else de cursos a switch
 
-Clasifica los cursos 9 a 12 con switch.
+Usa un `switch` sobre `grade` para mostrar: 9 → `Es alumno de primer año`; 10 → `Es alumno de segundo año`; 11 → `Es alumno de tercer año`; 12 → `Es alumno de cuarto año`; cualquier otro valor → `No es alumno de secundaria`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Es alumno de tercer año
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

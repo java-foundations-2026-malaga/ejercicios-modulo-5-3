@@ -2,7 +2,7 @@
 
 ## Número de días de un mes
 
-Agrupa meses según tengan 28, 30 o 31 días.
+Usa un `switch` sobre `month` agrupando casos: febrero (2) tiene `28 días`; abril, junio, septiembre y noviembre (4, 6, 9, 11) tienen `30 días`; el resto de meses (1, 3, 5, 7, 8, 10, 12) tienen `31 días`. Para cualquier otro valor imprime `Mes no válido`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Agrupa meses según tengan 28, 30 o 31 días.
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

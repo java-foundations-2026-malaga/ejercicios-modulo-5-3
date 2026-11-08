@@ -2,7 +2,7 @@
 
 ## Menú de calculadora básica
 
-Realiza +, -, * o / mediante switch.
+Usa un `switch` sobre `operation` (`'+'`, `'-'`, `'*'` o `'/'`) para calcular el resultado con `first` y `second`, e imprime `Resultado: <resultado>` (valor `double`). Para cualquier otra operación imprime `Operación no válida`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Resultado: 15.0
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

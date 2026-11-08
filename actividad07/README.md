@@ -2,7 +2,7 @@
 
 ## Nombre del mes
 
-Imprime el mes correspondiente a 1..12.
+Usa un `switch` sobre `month` para imprimir el nombre del mes en español con la inicial en mayúscula (1 → `Enero`, 2 → `Febrero`, …, 12 → `Diciembre`). Para cualquier otro valor imprime `Mes no válido`.
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Julio
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

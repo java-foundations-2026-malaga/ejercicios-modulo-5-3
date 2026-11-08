@@ -2,7 +2,7 @@
 
 ## Demostrador controlado de fall through
 
-Usa fall through intencionado para mostrar recompensas.
+Usa un `switch` sobre `level` **sin** `break` entre los casos, de modo que cada nivel recibe su recompensa y las de todos los niveles superiores: `case 1` imprime `Recompensa nivel 1`, `case 2` imprime `Recompensa nivel 2` y `case 3` imprime `Recompensa nivel 3`. Con `level = 2` deben aparecer las recompensas 2 y 3.
 
 ## Objetivo
 
@@ -29,4 +29,5 @@ Recompensa nivel 3
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

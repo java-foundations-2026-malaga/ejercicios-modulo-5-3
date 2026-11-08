@@ -2,7 +2,7 @@
 
 ## Días de la semana con String
 
-Agrupa días que comparten el mismo mensaje.
+Usa un `switch` sobre el `String` `day`: de `Monday` a `Friday` imprime `Entre semana`; `Saturday` y `Sunday`, `Fin de semana`; cualquier otro valor, `Día no válido`. Agrupa los casos que comparten mensaje (varios `case` seguidos o `case "Saturday", "Sunday":`).
 
 ## Objetivo
 
@@ -28,4 +28,5 @@ Entre semana
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.

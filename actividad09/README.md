@@ -2,7 +2,7 @@
 
 ## Contador por opción char
 
-Incrementa el contador correspondiente a A, B o C.
+Usa un `switch` sobre `option` para incrementar `aCount`, `bCount` o `cCount` según sea `'A'`, `'B'` o `'C'`. Después imprime los tres contadores, uno por línea, con el formato de la salida esperada.
 
 ## Objetivo
 
@@ -30,4 +30,5 @@ cCount: 0
 
 ## GitHub Actions
 
-- El workflow `Java CI` ejecuta automáticamente `mvn test` en cada push.
+- Sube tu trabajo a **tu rama** (no a `main`): el workflow `Autocorrección` compila y ejecuta los tests de cada actividad que hayas modificado.
+- En la pestaña **Actions** del repositorio verás ✅ si la actividad está aprobada o ❌ si hay errores de compilación o tests que fallan.
